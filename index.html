@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Bootstrap Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <img
+            src="https://via.placeholder.com/500"
+            alt="placeholder 500px"
+            class="img-fluid lg-image"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-6">
+          <div class="row">
+            <!-- hidden only on xs -->
+            <div class="d-none d-sm-block col-sm-12 col-md-6">
+              <img
+                src="https://via.placeholder.com/250"
+                alt="placeholder 250px"
+                class="img-fluid my-2"
+              />
+              <img
+                src="https://via.placeholder.com/250"
+                alt="placeholder 250px"
+                class="img-fluid my-2"
+              />
+            </div>
+            <!-- hidden on xs and sm -->
+            <div class="d-none d-md-block col-sm-12 col-md-6">
+              <img
+                src="https://via.placeholder.com/250"
+                alt="placeholder 250px"
+                class="img-fluid sm-image-blue my-2"
+              />
+              <img
+                src="https://via.placeholder.com/250"
+                alt="placeholder 250px"
+                class="img-fluid sm-image-blue my-2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hide on sm and wider screens -->
+      <div class="row d-sm-none">
+        <div class="col-xs-12 col-sm-6">
+          <img
+            src="https://via.placeholder.com/250"
+            alt="placeholder 250px"
+            class="img-fluid my-2"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <img
+            src="https://via.placeholder.com/250"
+            alt="placeholder 250px"
+            class="img-fluid my-2"
+          />
+        </div>
+      </div>
+      <!-- hide on md and wider screens -->
+      <div class="row d-md-none">
+        <div class="col-xs-12 col-sm-6">
+          <img
+            src="https://via.placeholder.com/250"
+            alt="placeholder 250px"
+            class="img-fluid sm-image-blue my-2"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <img
+            src="https://via.placeholder.com/250"
+            alt="placeholder 250px"
+            class="img-fluid sm-image-blue my-2"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
